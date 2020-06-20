@@ -29,4 +29,17 @@ public class SampleTest2 extends BaseTest{
                 .login("melih@testinium.com", "123456")
                 .logout();
     }
+
+
+    @Test
+    public void registerTest(){
+        new HomePage(driver)
+                .callRegisterPage()
+                .register("Melih", "Sakarya", "Erkek")
+                .register("Ayse", "Dursun", "Kadın");
+
+
+
+    }
+
 }
